@@ -1,0 +1,115 @@
+#container {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "header header"
+                        "pijltje pijltje"
+                        "about image"
+                        "skills image2"
+                        "jobs image1"
+                        "nav nav"
+                        "footer footer";
+}
+@media only screen and (min-width: 1080px) {
+    #container{
+      display: grid;
+      grid-template-areas: "header image"
+                            "pijltje pijltje"
+                            "jobs about"
+                            "skills nav"
+                            "image1 image2"
+                            "footer footer"
+    }
+
+}
+body {
+  background-image: url("https://hostgiant.ug/wp-content/uploads/2018/07/Generic_BG09_Dark.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  grid-area: header;
+  margin-top: 200px;
+  width: 90%;
+  height: 250px;
+  /* background-color: pink; */
+}
+
+#about{
+  grid-area: about;
+
+}
+#skills{
+  grid-area: skills;
+}
+#jobs{
+  grid-area: jobs;
+}
+nav{
+  grid-area: nav;
+  border-radius: 25px;
+  text-align: center;
+}
+#pijltje{
+  grid-area: pijltje;
+  text-align: center;
+  margin: 200px;
+  height: 50px
+}
+footer{
+  margin-bottom: 0px;
+  grid-area: footer;
+  background-color: white;
+}
+a{
+  color: #A5978B;
+  max-width: 20%;
+}
+#image img {
+  max-width: 90%;
+  border-radius: 25px;
+}
+
+#image1 img {
+  max-width: 80%;
+  border-radius: 25px;
+}
+
+#image2 img {
+  max-width: 100%;
+  border-radius: 35px;
+}
+
+h1 {
+  /* position: absolute;
+  bottom: 77%;
+  right: 45%; */
+  color: white;
+  font-size: 60px;
+}
+
+h2 {
+  color: #C4BBAF;
+  line-height: 50px;
+  text-align: left;
+}
+
+h3 {
+  text-align: left;
+  color: #A5978B;
+  line-height: 25px;
+}
+
+#image{
+  grid-area: image;
+  max-width: 100%;
+}
+
+#image1{
+  grid-area: image1;
+}
+
+#image2{
+  grid-area: image2;
+}
